@@ -42,10 +42,14 @@ section {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px 0;
+    
+    width: 200px; /* Sets the initial width of the profile picture */
+    height: 200px; /* Sets the initial height of the profile picture */
+    border-radius: 50%; /* Makes the image circular */
+    margin: 20px 0; /* Adds margin above and below the image */
+    border: 4px solid #007acc; /* Adds a border with the color matching the theme */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect for scaling */
+    
 }
 
 h1, h2 {
