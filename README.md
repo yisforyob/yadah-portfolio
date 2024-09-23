@@ -35,7 +35,7 @@ To get a local copy up and running, follow these steps:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/yadah-portfolio.git
+   git clone https://github.com/yisforyob/yadah-portfolio.git
 2. **Open in Your Preferred Code Editor**
 
 Open the project folder in your preferred code editor (e.g., Visual Studio Code, Sublime Text, Atom, IntelliJ, etc.) to view or modify the code.
