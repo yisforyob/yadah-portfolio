@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yadah Ngolo - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
     <header>
@@ -22,72 +21,52 @@
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section" data-aos="fade-up">
+    <section id="home">
         <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Yadah Ngolo, an aspiring Electrical Engineer with a passion for embedded systems and AI.</p>
-        <img src="images/yadah.jpg" alt="Yadah Ngolo" class="profile-pic" data-aos="zoom-in">
+        <p>Hi, I'm Yadah Ngolo, an tech enthusiast with a passion for embedded systems and AI.</p>
+        <img src="images/yadah.jpg" alt="Yadah Ngolo" class="profile-pic">
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section" data-aos="fade-up">
+    <section id="about">
         <h2>About Me</h2>
         <p>I am a rising junior at the University of Ottawa, pursuing a degree in Electrical Engineering and Computing Technology. I am passionate about embedded systems, AI, and building innovative solutions that bridge the gap between hardware and software.</p>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section" data-aos="fade-up">
+    <section id="skills">
         <h2>Skills</h2>
-        <ul class="skills-list" data-aos="fade-up">
-            <li>Python, JavaScript, C, C++</li>
-            <li>Embedded Systems, Microcontrollers</li>
-            <li>GitHub, Azure DevOps</li>
-            <li>Leadership, Teamwork, Communication</li>
+        <ul class="skills-list">
+            <li>Python, Java, JavaScript, C, C++, C#, .NET, HTML, CSS</li>
+            <li>Back-end Development, Embedded Software, Microcontrollers</li>
+            <li>GitHub, Azure DevOps, Android Studio, Onshape</li>
+            <li>Leadership, Teamwork, Communication, Attention to Details, Adaptability</li>
         </ul>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section" data-aos="fade-up">
+    <section id="experience">
         <h2>Experience</h2>
-        <div class="experience-item" data-aos="fade-right">
+        <div class="experience-item">
             <h3>Microsoft - Explore Intern (SWE & PM)</h3>
-            <p><strong>Duration:</strong> May 2024 – August 2024 | <strong>Location:</strong> Redmond, WA</p>
-            <ul>
-                <li>Developed malicious QR code protection for Microsoft Teams, impacting ~200 million users.</li>
-                <li>Led market research, drafted product and development design specifications, and communicated with stakeholders.</li>
-                <li>Engineered software solutions using C#/.NET, integrated APIs, created unit tests, and debugged code.</li>
-                <li>Managed project workflows and task assignments using Azure DevOps and GitHub.</li>
-                <li>Enhanced communication, leadership, and problem-solving skills while earning certifications in software development.</li>
-            </ul>
+            <p>Worked on malicious QR code protection in Microsoft Teams- protecting ~200 million users from phishing, engineered software solutions using C#/.NET, and managed project workflows.</p>
         </div>
-        <div class="experience-item" data-aos="fade-left">
-            <h3>CEED - Workshop Instructor & Makerspace Supervisor</h3>
-            <p><strong>Duration:</strong> September 2023 – Present | <strong>Location:</strong> Ottawa, ON</p>
-            <ul>
-                <li>Oversaw operations of uOttawa’s makerspace, assisting over 2000 students with various hardware and software tools.</li>
-                <li>Led and coordinated a team of 4 workshop instructors, ensuring smooth workshop execution.</li>
-                <li>Designed and conducted over 20 workshops on Arduino, 3D printing, and other makerspace technologies.</li>
-                <li>Diagnosed and resolved ~60% of hardware and software issues using troubleshooting techniques.</li>
-                <li>Adapted rapidly to new machinery, showcasing exceptional versatility and problem-solving skills.</li>
-            </ul>
+        <div class="experience-item">
+            <h3>CEED - Workshop Instructor</h3>
+            <p>Led workshops on Arduino and 3D printing, supervised makerspace, and assisted over 2000 students with various hardware and software tools.</p>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section" data-aos="fade-up">
+    <section id="projects">
         <h2>Projects</h2>
-        <div class="project-card" data-aos="zoom-in">
+        <div class="project-card">
             <h3>The Wired Box</h3>
-            <p>A temperature, humidity, and air quality monitoring system using microcontrollers, JavaScript, HTML, and CSS.</p>
+            <p>A temperature, humidity, and air quality monitoring system using microcontrollers and web integration.</p>
         </div>
-        <div class="project-card" data-aos="zoom-in">
+        <div class="project-card">
             <h3>Rentify App</h3>
-            <p>Developing a mobile platform that facilitates item rentals by connecting lessors with renters using Android Studio and Kotlin.</p>
+            <p>Currently developing a mobile platform that facilitates item rentals, connecting lessors with renters.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section" data-aos="fade-up">
+    <section id="contact">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/{your-form-id}" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -97,13 +76,6 @@
         </form>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800, // Duration of animations in milliseconds
-            once: true,    // Animation plays only once when scrolling
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
