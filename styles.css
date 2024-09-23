@@ -1,5 +1,4 @@
-/* Existing CSS */
-
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -9,7 +8,38 @@ body {
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Animation for section reveal */
+header {
+    background: #007acc;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Section Styling */
 .section {
     padding: 50px 20px;
     text-align: center;
@@ -18,32 +48,57 @@ body {
     border-radius: 8px;
     max-width: 1000px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Start hidden */
+    opacity: 0; /* Start hidden for reveal animation */
     transform: translateY(50px); /* Slide in from below */
     transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
 }
 
-/* Animation when sections are visible */
 .section.show {
     opacity: 1;
     transform: translateY(0); /* Slide up to position */
 }
 
-/* Animation for profile image */
+/* Profile Image Styling */
 .profile-pic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 20px 0;
     border: 4px solid #007acc;
-    transition: transform 0.3s ease-in-out; /* Smooth enlarge */
+    transition: transform 0.3s ease-in-out; /* Smooth enlarge effect */
 }
 
 .profile-pic:hover {
     transform: scale(1.1); /* Enlarge on hover */
 }
 
-/* Animation for buttons */
+/* Heading Styles */
+h1, h2 {
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+/* Skills List Styling */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Experience and Project Cards */
+.experience-item, .project-card {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Button Styling */
 button {
     background-color: #007acc;
     color: white;
@@ -57,4 +112,50 @@ button {
 button:hover {
     background-color: #005f99;
     transform: translateY(-2px); /* Raise slightly */
+}
+
+/* Form Input Styles */
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* AOS Animations */
+[data-aos] {
+    transition-property: transform, opacity !important;
+}
+
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+[data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+[data-aos="zoom-in"] {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+/* AOS Animation Transitions */
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translate(0);
 }
